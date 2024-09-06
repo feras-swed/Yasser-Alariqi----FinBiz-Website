@@ -3,7 +3,7 @@ import Button from './Button'
 
 function EmailInput() {
   return (
-    <div className="flex flex-col md:flex-row gap-4 md:gap-6 rounded-3xl dark:bg-dark-cardBg bg-white w-full max-w-xl my-8 mx-auto shadow-md">
+    <div data-aos="fade-up" className="flex flex-col md:flex-row gap-4 md:gap-6 rounded-3xl dark:bg-dark-cardBg bg-white w-full max-w-xl my-8 mx-auto shadow-md">
       <input 
         type="email" 
         placeholder="Enter your email address" 

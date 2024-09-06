@@ -7,7 +7,7 @@ function CardUpgrade() {
       <article className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center bg-white dark:bg-dark-navbarBg rounded-3xl p-6 md:p-10 gap-10">
         
         {/* Text Section */}
-        <div className="flex flex-col justify-center space-y-6 text-center lg:text-left lg:pl-12">
+        <div data-aos="fade-right" className="flex flex-col justify-center space-y-6 text-center lg:text-left lg:pl-12">
           <h2 className="text-4xl lg:text-6xl font-semibold text-light-headingText dark:text-white lg:leading-tight mb-4">
             Let’s Upgrade your <br /> finances experience <br /> by using FinBiz
           </h2>
@@ -25,7 +25,7 @@ function CardUpgrade() {
         </div>
 
         {/* Image Section */}
-        <figure className="flex justify-center lg:justify-end">
+        <figure data-aos="fade-up" className="flex justify-center lg:justify-end">
           <img
             src="/planUpgrade.svg"
             alt="Plan Upgrade"

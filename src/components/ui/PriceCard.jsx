@@ -3,7 +3,7 @@ import Button from './Button'
 
 function PriceCard({ title, desc, price, listofbenifits, ButtonDesing , isSpical }) {
   return (
-    <div className='relative bg-light-priceCardBg dark:bg-dark-priceCardBg rounded-3xl p-10 shadow-lg max-w-sm mx-auto text-center flex flex-col justify-between h-full'>
+    <div data-aos="fade-up" className='relative bg-light-priceCardBg dark:bg-dark-priceCardBg rounded-3xl p-10 shadow-lg max-w-sm mx-auto text-center flex flex-col justify-between h-full'>
       <div>
          <h4 className={`text-2xl font-normal mb-6 mt-6 ${isSpical ? 'text-dark-lightGreen' : 'text-light-headingText dark:text-white'}`}>
           {title}
