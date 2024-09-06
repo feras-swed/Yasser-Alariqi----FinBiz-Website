@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <header className="bg-light-navbarBg dark:bg-dark-navbarBg">
-      <nav className="relative container mx-auto flex lg:justify-around justify-between items-center p-4 border-b-2">
+      <nav className="relative container mx-auto flex lg:justify-around justify-between items-center p-4 ">
         <figure className="flex items-center gap-2 cursor-pointer">
           <img src="/logo.svg" alt="logo" />
           <h3 className="dark:text-dark-headingText text-light-headingText font-medium text-lg ">

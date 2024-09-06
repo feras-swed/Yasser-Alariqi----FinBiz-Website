@@ -13,8 +13,8 @@ export default {
           navbarBg: "#FFFFFF", // Navbar background color
           buttonBg: "#F6F6F6",
           pageBg: "#F6F6F6", // Main page background color
-          
           headingText: "#000000", // Heading text color
+          priceCardBg : "#F4F4F4",
           paragraphText: "#828282", // Paragraph text color
           cardBg: "#FFFFFF", // Cards background color
           primary: "#1E40AF", // Custom primary color (used across modes)
@@ -31,9 +31,12 @@ export default {
         dark: {
           navbarBg: "#0F0F0F", // Navbar background color
           buttonBg: "#1F1F1F",
+          priceCardBg : "#161616",
           pageBg: "#1D1C20", // Main page background color
           greenBg: "#171F05",
           lightGreen: "#A3DC2F",
+          darkGreen:"#1F7A1F",
+          iconsBgColor: "#4B4B4B",
           headingText: "#FFFFFF", // Heading text color
           paragraphText: "#9B9CA1", // Paragraph text color
           cardBg: "#242424", // Cards background color
