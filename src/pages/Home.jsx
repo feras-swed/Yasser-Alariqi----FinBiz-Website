@@ -10,7 +10,7 @@ function Home() {
       <Landing/>
       <Testimonials/>
       <Plan/>
-      {/* <Footer/>  */}
+      <Footer/>
     </main>
   );
 }

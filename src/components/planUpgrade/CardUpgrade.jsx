@@ -25,7 +25,7 @@ function CardUpgrade() {
         </div>
 
         {/* Image Section */}
-        <figure data-aos="fade-up" className="flex justify-center lg:justify-end">
+        <figure data-aos="zoom-in" className="flex justify-center lg:justify-end">
           <img
             src="/planUpgrade.svg"
             alt="Plan Upgrade"
