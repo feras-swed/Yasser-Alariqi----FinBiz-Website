@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 function Footer() {
   return (
-    <footer className="bg-light-navbarBg dark:bg-dark-navbarBg pb-6 text-white">
+    <footer className="bg-light-navbarBg dark:bg-dark-navbarBg pb-6 text-white overflow-hidden">
       <div data-aos="fade-down" className="container mx-auto grid grid-cols-12 gap-8 pt-20 pb-2 lg:px-28 md:px-12 px-4">
         
         {/* Left Section: Logo and Socials */}
