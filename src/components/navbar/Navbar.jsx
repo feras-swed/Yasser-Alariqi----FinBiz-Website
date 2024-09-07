@@ -9,11 +9,11 @@ function Navbar() {
   };
 
   return (
-    <header className="bg-light-navbarBg dark:bg-dark-navbarBg" >
-      <nav className="relative container mx-auto flex lg:justify-around justify-between items-center p-4 ">
+    <header className="bg-light-navbarBg dark:bg-dark-navbarBg">
+      <nav className="relative container mx-auto flex lg:justify-around justify-between items-center p-4 z-[9999]">
         <figure className="flex items-center gap-2 cursor-pointer">
           <img src="/logo.svg" alt="logo" />
-          <h3 className="dark:text-dark-headingText text-light-headingText font-medium text-lg ">
+          <h3 className="dark:text-dark-headingText text-light-headingText font-medium text-lg">
             FinBiz
           </h3>
         </figure>
@@ -49,7 +49,7 @@ function Navbar() {
         <div
           className={`fixed inset-0 bg-light-buttonBg dark:bg-dark-buttonBg text-light-paragraphText dark:text-dark-paragraphText transition-transform transform ${
             isMenuOpen ? "translate-y-0" : "-translate-y-full"
-          } md:hidden`}
+          } md:hidden z-[9999]`}
         >
           <button
             className="absolute top-4 right-4 text-black dark:text-white"

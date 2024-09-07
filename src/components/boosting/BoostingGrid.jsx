@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 function BoostingGrid() {
   return (
-    <section className="container mx-auto grid grid-cols-12 gap-4 mt-32 md:gap-8 px-4 lg:px-24 relative z-20">
+    <section className="container mx-auto grid grid-cols-12 gap-4 mt-32 md:gap-6 px-4 lg:px-24 relative z-20">
       {/* First Card: Simple Analytics */}
       <div data-aos="fade-right" className="bg-white flex flex-col justify-between dark:bg-dark-priceCardBg col-span-12 lg:col-span-3 rounded-2xl border-2 border-neutral-800 text-center text-black dark:text-white p-6">
         <h4 className="text-lg lg:text-xl">Simple Analytics</h4>

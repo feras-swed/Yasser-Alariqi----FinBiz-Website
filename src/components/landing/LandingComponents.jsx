@@ -2,6 +2,7 @@ import React from "react";
 import AiCard from "../ui/AiCard";
 import EmailInput from "../ui/EmailInput";
 import Reviews from "../ui/Reviews";
+import ProfitGrid from "../profit/ProfitGrid";
 
 function LandingComponents() {
   return (
@@ -18,6 +19,7 @@ function LandingComponents() {
       </p>
       <EmailInput />
       <Reviews/>
+      <ProfitGrid/>
     </section>
   );
 }
