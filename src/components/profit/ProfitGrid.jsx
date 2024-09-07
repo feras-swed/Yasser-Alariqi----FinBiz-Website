@@ -1,4 +1,5 @@
 import React from "react";
+import ReactChart from "../ui/ReactChart"; 
 import Button from "../ui/Button";
 
 function ProfitGrid() {
@@ -68,8 +69,8 @@ function ProfitGrid() {
         </div>
 
         {/* Fifth Card */}
-        <div data-aos="fade-left"className="bg-white flex flex-col justify-between dark:bg-dark-pageBg col-span-12 lg:col-span-8 rounded-2xl border-2 border-neutral-800 text-start text-black dark:text-white p-6">
-
+        <div data-aos="fade-left"className="bg-white flex flex-col justify-between dark:bg-dark-pageBg col-span-12 lg:col-span-8 rounded-2xl border-2 border-neutral-800 text-start text-black dark:text-white p-2">
+          <ReactChart />
         </div>
 
         {/* Sixth Card */}

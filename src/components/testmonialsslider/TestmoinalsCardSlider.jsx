@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HeadingTitle from "../ui/HeadingTitle";
 import HeadingDescription from "../ui/HeadingDescription";
 import TestimonialCard from "../ui/TestimonialCard";
 
-function TestmoinalsCardSlider() {
+function TestimonialsCardSlider() {
   const testimonials = [
     {
       id: 1,
@@ -47,28 +47,38 @@ function TestmoinalsCardSlider() {
     },
   ];
 
-  // We'll display 3 testimonials at a time
+  // State for the current index and window width
   const [currentIndex, setCurrentIndex] = useState(0);
-  const testimonialsPerPage = 3;
+  const [width, setWidth] = useState(window.innerWidth);
+
+  // Handler for updating width on resize
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, []);
+
+  // Determine the number of testimonials per page based on width
+  const testimonialsPerPage = window.innerWidth > 768 ? 3 : 1;
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex + 1) % testimonials.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % (testimonials.length));
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - 1 + testimonials.length) % testimonials.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
   };
 
   // Function to get the correct testimonials to display
   const getTestimonialsToShow = () => {
     const testimonialsToShow = [];
     for (let i = 0; i < testimonialsPerPage; i++) {
-      const index = (currentIndex + i) % testimonials.length;
-      testimonialsToShow.push(testimonials[index]);
+      testimonialsToShow.push(testimonials[(currentIndex + i) % testimonials.length]);
     }
     return testimonialsToShow;
   };
@@ -84,7 +94,7 @@ function TestmoinalsCardSlider() {
 
         <div
           data-aos="fade-up"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16"
+          className={`grid grid-cols-${testimonialsPerPage} gap-6 mt-16 transition-transform duration-500 ease-in-out`}
         >
           {getTestimonialsToShow().map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
@@ -110,4 +120,4 @@ function TestmoinalsCardSlider() {
   );
 }
 
-export default TestmoinalsCardSlider;
+export default TestimonialsCardSlider;
