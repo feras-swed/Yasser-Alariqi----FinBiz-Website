@@ -10,6 +10,7 @@ export default {
       colors: {
         // Light mode colors
         light: {
+          analyticsBg: "#E5EADB",
           navbarBg: "#FFFFFF", // Navbar background color
           buttonBg: "#F6F6F6",
           pageBg: "#F6F6F6", // Main page background color
@@ -29,6 +30,8 @@ export default {
         },
         // Dark mode colors
         dark: {
+          analyticNumberColor : "#33C6AB",
+          analyticsBg: "#242424",
           navbarBg: "#0F0F0F", // Navbar background color
           buttonBg: "#1F1F1F",
           priceCardBg : "#161616",
