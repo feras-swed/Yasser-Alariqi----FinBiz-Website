@@ -54,14 +54,14 @@ function Footer() {
 
         {/* Company Links */}
         <div className="lg:col-span-2 col-span-12">
-          <h3 className="font-semibold text-lg mb-3 dark:text-dark-headingText">
+          <h3 className="font-semibold text-lg mb-3 dark:text-dark-headingText text-black">
             Company
           </h3>
           <ul className="space-y-2">
             <li>
               <a
                 href="#"
-                className="text-base dark:text-dark-paragraphText hover:underline"
+                className="text-base dark:text-dark-paragraphText hover:underline text-black"
               >
                 Service
               </a>
@@ -69,7 +69,7 @@ function Footer() {
             <li>
               <a
                 href="#"
-                className="text-base dark:text-dark-paragraphText hover:underline"
+                className="text-base dark:text-dark-paragraphText hover:underline text-black"
               >
                 Resources
               </a>
@@ -77,7 +77,7 @@ function Footer() {
             <li>
               <a
                 href="#"
-                className="text-base dark:text-dark-paragraphText hover:underline"
+                className="text-base dark:text-dark-paragraphText hover:underline text-black"
               >
                 About Us
               </a>
@@ -87,14 +87,14 @@ function Footer() {
 
         {/* Help Links */}
         <div className="lg:col-span-2 col-span-12">
-          <h3 className="font-semibold text-lg mb-3 dark:text-dark-headingText">
+          <h3 className="font-semibold text-lg mb-3 dark:text-dark-headingText text-black">
             Help
           </h3>
           <ul className="space-y-2">
             <li>
               <a
                 href="#"
-                className="text-base dark:text-dark-paragraphText hover:underline"
+                className="text-base dark:text-dark-paragraphText hover:underline text-black"
               >
                 Customer Support
               </a>
@@ -102,7 +102,7 @@ function Footer() {
             <li>
               <a
                 href="#"
-                className="text-base dark:text-dark-paragraphText hover:underline"
+                className="text-base dark:text-dark-paragraphText hover:underline text-black"
               >
                 Terms & Conditions
               </a>
@@ -110,7 +110,7 @@ function Footer() {
             <li>
               <a
                 href="#"
-                className="text-base dark:text-dark-paragraphText hover:underline"
+                className="text-base dark:text-dark-paragraphText hover:underline text-black"
               >
                 Privacy Policy
               </a>
@@ -120,7 +120,7 @@ function Footer() {
 
         {/* Newsletter Section */}
         <div className="lg:col-span-4 col-span-12 hidden lg:block">
-        <h3 className="font-semibold text-lg mb-3 dark:text-dark-headingText">
+        <h3 className="font-semibold text-lg mb-3 dark:text-dark-headingText text-black">
           Subscribe to Newsletter
         </h3>
 
@@ -142,7 +142,7 @@ function Footer() {
 
       {/* Footer Bottom */}
       <div className="border-t-2 border-gray-800 mt-8 pt-4 text-center text-xs text-gray-500 mx-20">
-        <p  className="dark:text-white text-black py-2 text-sm">
+        <p  className="dark:text-white text-black py-2 text-sm">  
           © Copyright 2024, All Rights Reserved by FinBiz
         </p>
       </div>

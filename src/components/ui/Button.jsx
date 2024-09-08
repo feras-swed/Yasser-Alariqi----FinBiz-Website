@@ -1,6 +1,6 @@
-function Button({ text, className = "" }) {
+function Button({ text, className = "" , functionSend }) {
     return (
-      <button className={`${className}`} >
+      <button onClick={functionSend} className={`${className}`} >
         {text}
       </button>
     );

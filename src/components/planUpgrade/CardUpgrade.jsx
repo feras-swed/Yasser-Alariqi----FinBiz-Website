@@ -8,17 +8,17 @@ function CardUpgrade() {
         
         {/* Text Section */}
         <div data-aos="fade-right" className="flex flex-col justify-center space-y-6 text-center lg:text-left lg:pl-12">
-          <h2 className="text-4xl lg:text-6xl font-semibold text-light-headingText dark:text-white lg:leading-tight mb-4">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-light-headingText dark:text-white lg:leading-tight mb-4">
             Let’s Upgrade your <br /> finances experience <br /> by using FinBiz
           </h2>
-          <div className="flex flex-col lg:flex-row justify-center lg:justify-start space-y-4 lg:space-y-0 lg:space-x-4">
+          <div className="flex gap-2 flex-row justify-center lg:justify-start lg:space-y-0 lg:space-x-4">
                 <Button
                     text="Request Demo"
-                    className="w-full lg:w-48 bg-dark-lightGreen text-black font-medium text-sm py-3 rounded-full"
+                    className="lg:w-48 w-36 bg-dark-lightGreen text-black font-medium text-sm py-3 rounded-full"
                 />
                 <Button
                     text="Watch Video"
-                    className="w-full lg:w-48 bg-black dark:bg-white text-white dark:text-black transition font-medium text-sm py-3 rounded-full"
+                    className="lg:w-48 w-36 bg-black dark:bg-white text-white dark:text-black transition font-medium text-sm py-3 rounded-full"
                 />
           </div>
 

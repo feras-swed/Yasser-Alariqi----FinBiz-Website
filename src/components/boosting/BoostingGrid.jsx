@@ -3,14 +3,14 @@ import Button from "../ui/Button";
 
 function BoostingGrid() {
   return (
-    <section className="container mx-auto grid grid-cols-12 gap-4 mt-32 md:gap-6 px-4 lg:px-24 relative z-20">
+    <section className="container mx-auto grid grid-cols-12 gap-4 mt-20 md:gap-6 px-4 lg:px-24 relative z-20">
       {/* First Card: Simple Analytics */}
-      <div data-aos="fade-right" className="bg-white flex flex-col justify-between dark:bg-dark-priceCardBg col-span-12 lg:col-span-3 rounded-2xl border-2 border-neutral-800 text-center text-black dark:text-white p-6">
+      <div data-aos="fade-right" className="bg-white flex flex-col justify-between dark:bg-dark-priceCardBg col-span-12 lg:col-span-3 rounded-2xl border-2 dark:border-neutral-800 border-neutral-300  text-center text-black dark:text-white p-6">
         <h4 className="text-lg lg:text-xl">Simple Analytics</h4>
         <p className="text-sm lg:text-base font-extralight text-neutral-400 mb-6">
           Make informed decisions backed by data through our analytics tools.
         </p>
-        <div className="p-0 dark:bg-dark-pageBg bg-light-pageBg rounded-xl border-[1px] border-neutral-800">
+        <div className="p-0 dark:bg-dark-pageBg bg-light-pageBg rounded-xl border-[1px] dark:border-neutral-800 border-neutral-300 ">
           <p className="text-dark-analyticNumberColor text-left pt-6 pl-4 flex gap-1 text-sm lg:text-base">
             <img src="upSign.svg" alt="up sign" /> 14.12%
           </p>
@@ -19,29 +19,29 @@ function BoostingGrid() {
       </div>
 
       {/* Second Card: Boosting Business */}
-      <div data-aos="zoom-in" className="bg-white dark:bg-dark-priceCardBg col-span-12 lg:col-span-6 rounded-2xl border-2 border-neutral-800 text-center text-black dark:text-white p-6">
+      <div data-aos="zoom-in" className="bg-white dark:bg-dark-priceCardBg col-span-12 lg:col-span-6 rounded-2xl border-2 dark:border-neutral-800 border-neutral-300  text-center text-black dark:text-white p-6">
         <h4 className="text-lg lg:text-xl mb-2">Boosting Business. Today and Tomorrow.</h4>
         <p className="pb-6 font-extralight text-sm lg:text-lg text-neutral-400">
           Bring harmony to team expenses with budget limits and real-time monitoring.
         </p>
-        <div className="flex justify-center p-4 dark:bg-dark-pageBg bg-light-pageBg rounded-xl border-[1px] border-neutral-800">
+        <div className="flex justify-center p-4 dark:bg-dark-pageBg bg-light-pageBg rounded-xl border-[1px] dark:border-neutral-800 border-neutral-300 ">
           <img src="/analyticeTwo.svg" alt="analytics two" className="mx-auto my-4 mt-6 w-full" />
         </div>
       </div>
 
       {/*  Third Card: Easy Collaboration */}
-      <div data-aos="fade-left" className="bg-white dark:bg-dark-priceCardBg col-span-12 lg:col-span-3 rounded-2xl border-2 border-neutral-800 text-center text-black dark:text-white p-6">
+      <div data-aos="fade-left" className="bg-white dark:bg-dark-priceCardBg col-span-12 lg:col-span-3 rounded-2xl border-2 dark:border-neutral-800 border-neutral-300  text-center text-black dark:text-white p-6">
         <h4 className="text-lg lg:text-xl mb-2">Easy Collaboration</h4>
         <p className="text-sm lg:text-base font-extralight text-neutral-400 mb-4">
           Seamlessly collaborate with your team members like never before.
         </p>
-        <figure className="dark:bg-dark-pageBg w-36 h-36 lg:w-48 lg:h-48 max-h-full max-w-full m-auto flex justify-center rounded-full mt-10">
+        <figure className="dark:bg-dark-pageBg bg-light-analyticsBg w-36 h-36 lg:w-48 lg:h-48 max-h-full max-w-full m-auto flex justify-center rounded-full mt-10">
           <img src="usersForAnalyticsThree.svg" />
         </figure>
       </div>
 
       {/* Fourth Card: Real-time Accounting */}
-      <div data-aos="fade-right" className="bg-white dark:bg-dark-priceCardBg col-span-12 lg:col-span-6 rounded-2xl border-2 border-neutral-800 text-start text-black dark:text-white p-6">
+      <div data-aos="fade-right" className="bg-white lg:block hidden dark:bg-dark-priceCardBg col-span-12 lg:col-span-6 rounded-2xl border-2 dark:border-neutral-800 border-neutral-300  text-start text-black dark:text-white p-6">
         <h4 className="mb-2 text-lg lg:text-xl">Real-time accounting at your fingertips.</h4>
         <p className="pb-6 font-extralight text-sm lg:text-lg text-neutral-400">
           Take the pain out of bookkeeping! Wave goodbye to mountains of paperwork.
@@ -55,7 +55,7 @@ function BoostingGrid() {
           </div>
 
           {/* Right Section (Invoices) */}
-          <div className="flex-grow border-2 border-neutral-800 rounded-lg p-4 bg-light-pageBg dark:bg-dark-pageBg">
+          <div className="flex-grow border-2 dark:border-neutral-800 border-neutral-300  rounded-lg p-4 bg-light-pageBg dark:bg-dark-pageBg">
             <h4 className="font-semibold text-sm lg:text-base mb-4">Monthly Invoice</h4>
 
             <article className="flex items-center justify-between mb-4">
@@ -95,14 +95,14 @@ function BoostingGrid() {
       </div>
 
       {/* Fifth Card: Optimist Expense Management */}
-      <div  data-aos="fade-left" className="bg-white flex flex-col justify-between dark:bg-dark-priceCardBg col-span-12 lg:col-span-6 rounded-2xl border-2 border-neutral-800 text-start text-black dark:text-white p-6">
-        <h4 className="lg:text-4xl text-2xl lg:leading-snug leading-tight font-semibold">
+      <div  data-aos="fade-left" className="bg-white flex flex-col justify-between text-center dark:bg-dark-priceCardBg col-span-12 lg:col-span-6 rounded-2xl border-2 dark:border-neutral-800 border-neutral-300  lg:text-start text-black dark:text-white p-6">
+        <h4 className="lg:text-4xl text-2xl lg:leading-snug leading-tight font-semibold mt-4">
           Optimist expense Management as a team
         </h4>
-        <p className="pb-6 font-extralight text-sm lg:text-lg text-neutral-400 lg:leading-snug leading-tight">
+        <p className="pb-6 font-extralight text-sm lg:text-lg text-neutral-400 pt-6 lg:leading-snug leading-tight">
           Bring harmony to team expenses with budget limits and real-time monitoring.
         </p>
-        <Button text="Explore more" className="p-3 w-40 bg-black text-white rounded-3xl dark:bg-white dark:text-black" />
+        <Button text="Explore more" className="p-3 w-40 block lg:mx-0 mx-auto bg-black text-white rounded-3xl dark:bg-white dark:text-black" />
       </div>
     </section>
   );

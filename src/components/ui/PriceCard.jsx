@@ -1,11 +1,12 @@
 import React from 'react'
 import Button from './Button'
 
-function PriceCard({ title, desc, price, listofbenifits, ButtonDesing , isSpical }) {
+function PriceCard({ title, desc, price, listofbenifits, ButtonDesing , isSpical ,isPopular}) {
   return (
-    <div data-aos="fade-up" className='relative bg-light-priceCardBg dark:bg-dark-priceCardBg rounded-3xl p-10 shadow-lg max-w-sm mx-auto text-center flex flex-col justify-between h-full'>
+    <div data-aos="fade-up" className='relative bg-light-priceCardBg dark:bg-dark-priceCardBg rounded-3xl p-10 shadow-xl max-w-sm mx-auto text-center flex flex-col justify-between h-full'>
       <div>
-         <h4 className={`text-2xl font-normal mb-6 mt-6 ${isSpical ? 'text-dark-lightGreen' : 'text-light-headingText dark:text-white'}`}>
+        {isPopular ? <img src='/divpopular.svg' className='absolute top-4 right-5 px-1 py-1'/> : null}
+        <h4 className={`text-2xl font-normal mb-6 mt-6 ${isSpical ? 'text-dark-lightGreen' : 'text-light-headingText dark:text-white'}`}>
           {title}
         </h4>
 
@@ -13,7 +14,7 @@ function PriceCard({ title, desc, price, listofbenifits, ButtonDesing , isSpical
           {desc}
         </p>
 
-        <p className='text-3xl font-bold text-dark-headingText dark:text-white mb-20'>
+        <p className='text-3xl font-bold dark:text-white text-black mb-20'>
           {price}
           <span className='text-lg font-normal'>/month</span>
         </p>
